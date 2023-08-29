@@ -1,6 +1,6 @@
 
-<h1 align="center">BVNK</h1>
-<span align="center">HOSTED PAYMENT PORTAL</span>
+<h1 align="center">BVNK - HOSTED PAYMENT PORTAL</h1>
+
 
 
 [![HitCount](https://hits.dwyl.com/Zeus540/BVNK-HPP.svg?style=flat-square)](http://hits.dwyl.com/Zeus540/BVNK-HPP)
