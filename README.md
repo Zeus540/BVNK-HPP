@@ -1,15 +1,15 @@
-# BVNK-HPP
+![Untitled Design](https://github.com/Zeus540/BVNK-HPP/assets/47927512/bd6e76a6-206b-4934-b0dc-bdccb353acc7)
 
 ## Description
 A demo hosted payment portal built in react that allows users to select a crypto currency in which they would like to pay a merchant
 
-## Supprted Currencies
-    Bitcoin
-    Etheruim
-    Litecoin
+## Supported Currencies
+1. Bitcoin
+2. Etheruim
+3. Litecoin
 
 ## Setup
-1. git clone
-2. cd BVNK-HPP
-3. npm install
-4. npm run dev
+    git clone
+    cd BVNK-HPP
+    npm install
+    npm run dev
