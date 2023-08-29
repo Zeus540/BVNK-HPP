@@ -1,6 +1,8 @@
 ![Untitled Design](https://github.com/Zeus540/BVNK-HPP/assets/47927512/bd6e76a6-206b-4934-b0dc-bdccb353acc7)
 
- ![GitHub](https://img.shields.io/github/license/Zeus540/BVNK-HPP) [![HitCount](https://hits.dwyl.com/Zeus540/BVNK-HPP.svg?style=flat-square)](http://hits.dwyl.com/Zeus540/BVNK-HPP)
+[![HitCount](https://hits.dwyl.com/Zeus540/BVNK-HPP.svg?style=flat-square)](http://hits.dwyl.com/Zeus540/BVNK-HPP) 
+
+https://img.shields.io/badge/Bitcoin-000000?style=for-the-badge&logo=bitcoin&logoColor=white https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white https://img.shields.io/badge/Litecoin-A6A9AA?style=for-the-badge&logo=Litecoin&logoColor=white
 
 ## Description
 A demo hosted payment portal built in react that allows users to select a crypto currency in which they would like to pay a merchant
@@ -26,7 +28,7 @@ A demo hosted payment portal built in react that allows users to select a crypto
 
 
 ## Supported Currencies
-1. Bitcoin
+1. Bitcoin 
 2. Etheruim
 3. Litecoin
 
