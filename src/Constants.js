@@ -1,0 +1,1 @@
+export const BASE_URL = "https://api.sandbox.bvnk.com/api/v1/pay"
