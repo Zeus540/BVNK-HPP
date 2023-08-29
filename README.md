@@ -5,6 +5,7 @@
     }
  
 </style>
+%%html
 
 <div class=".white">
 <h1 align="center">BVNK</h1>
