@@ -1,6 +1,6 @@
 ![Untitled Design](https://github.com/Zeus540/BVNK-HPP/assets/47927512/bd6e76a6-206b-4934-b0dc-bdccb353acc7)
 
-[![HitCount](https://hits.dwyl.com/{username}/{project-name}.svg)](https://hits.dwyl.com/Zeus540/BVNK-HPP)
+ [![HitCount](https://hits.dwyl.com/Zeus540/BVNK-HPP.svg?style=flat-square)](http://hits.dwyl.com/Zeus540/BVNK-HPP)
 
 ## Description
 A demo hosted payment portal built in react that allows users to select a crypto currency in which they would like to pay a merchant
