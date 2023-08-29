@@ -40,8 +40,13 @@ A demo hosted payment portal built in react that allows users to select a crypto
 2. Etheruim
 3. Litecoin
 
+## Requirements
+1. Node v20.4.0
+2. Npm 9.7.2
+
 ## Setup
     git clone https://github.com/Zeus540/BVNK-HPP.git
     cd BVNK-HPP
     npm install
     npm run dev
+
