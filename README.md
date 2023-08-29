@@ -1,5 +1,12 @@
+%%html
+<style>
+    .white {
+        background-color: white;
+    }
+ 
+</style>
 
-<div style="background:white">
+<div class=".white">
 <h1 align="center">BVNK</h1>
 <h2 align="center">HOSTED PAYMENT PORTAL</h2>
 </div>
