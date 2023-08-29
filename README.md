@@ -1,5 +1,9 @@
 
+<div style="background:white">
 <h1 align="center">BVNK</h1>
+<h2 align="center">HOSTED PAYMENT PORTAL</h2>
+</div>
+
 
 
 [![HitCount](https://hits.dwyl.com/Zeus540/BVNK-HPP.svg?style=flat-square)](http://hits.dwyl.com/Zeus540/BVNK-HPP)
