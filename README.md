@@ -2,7 +2,9 @@
 
 [![HitCount](https://hits.dwyl.com/Zeus540/BVNK-HPP.svg?style=flat-square)](http://hits.dwyl.com/Zeus540/BVNK-HPP) 
 
-![image]({https://img.shields.io/badge/Bitcoin-000000?style=for-the-badge&logo=bitcoin&logoColor=white}) ![image]({https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white}) ![image]({https://img.shields.io/badge/Litecoin-A6A9AA?style=for-the-badge&logo=Litecoin&logoColor=white})
+![image](https://img.shields.io/badge/Bitcoin-000000?style=for-the-badge&logo=bitcoin&logoColor=white) 
+![image](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white) 
+![image](https://img.shields.io/badge/Litecoin-A6A9AA?style=for-the-badge&logo=Litecoin&logoColor=white)
 
 ## Description
 A demo hosted payment portal built in react that allows users to select a crypto currency in which they would like to pay a merchant
