@@ -1,19 +1,9 @@
 import React from 'react'
-import styled from 'styled-components'
-import { Heading } from '../styles/global'
+import { TextSmall } from './expired-styles'
+import { Heading } from '../../styles/global'
 
-const TextSmall = styled.p`
-color: #556877;
-text-align: center;
-font-family: Inter;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-`
 
 function Expired() {
-
 
   return (
     <>
@@ -31,8 +21,7 @@ function Expired() {
         </div>
         <Heading> Payment details expired</Heading>
        
- 
-          <TextSmall>The payment details for your transaction <br/>have expired.</TextSmall>
+        <TextSmall>The payment details for your transaction <br/>have expired.</TextSmall>
     </>
   )
 }

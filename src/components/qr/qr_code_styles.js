@@ -1,8 +1,6 @@
-import React from 'react'
-import QRCode from 'qrcode.react';
 import styled from 'styled-components'
 
-const QrCodeHolder = styled.div`
+export const QrCodeHolder = styled.div`
 display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,14 +18,3 @@ display: flex;
         word-break: break-word;
     }
 `
-
-const QrCode = ({url,address}) => {
-  return (
-    <QrCodeHolder>
-    <QRCode value={url} />
-    <p>{address}</p>
-    </QrCodeHolder>
-  )
-}
-
-export default QrCode

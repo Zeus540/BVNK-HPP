@@ -39,7 +39,7 @@ A demo hosted payment portal built in react that allows users to select a crypto
 
 ## Supported Currencies
 1. Bitcoin 
-2. Etheruim
+2. Ethereum
 3. Litecoin
 
 ## Requirements

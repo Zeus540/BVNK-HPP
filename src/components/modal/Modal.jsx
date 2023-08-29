@@ -1,33 +1,18 @@
 import React,{useState,useEffect} from 'react'
-import styled from 'styled-components'
-import { motion as m  } from 'framer-motion'
-import PayIn from '../PayIn'
-import Expired from '../Expired'
+import PayIn from '../payin/PayIn'
+import Expired from '../expired/Expired'
 import PayInPayment from '../PayInPayment'
-
-
-const Root = styled(m.div)`
-display: inline-flex;
-max-width: 460px;
-padding: 25px;
-flex-direction: column;
-align-items: center;
-gap: 25px;
-border-radius: 10px;
-background: #FFF;
-width: 100%;
-`
+import { Root } from './modal_styles'
 
 
 const Modal = ({type,payload,handleCurrencyChange,isValid,timer,updatingQuote}) => {
 
-   const [form, setForm] = useState(<></>)
+   const [form, setForm] = useState(null)
 
    useEffect(() => {
    
     if(type){
      
-        
     let modals = {
         "pending" : 
         <PayIn 
@@ -70,13 +55,19 @@ const Modal = ({type,payload,handleCurrencyChange,isValid,timer,updatingQuote}) 
    
 
   return (
-    <Root
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    exit={{ opacity: 0 }}
-    >
-    {form}
-    </Root>
+   <>
+    {form ? 
+        <Root
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        >
+        {form}
+        </Root>:
+        null
+    }
+   </>
+   
   )
 }
 

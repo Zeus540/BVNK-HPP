@@ -7,10 +7,13 @@ import NotFound from './Pages/NotFound'
 
 import { HelmetProvider } from 'react-helmet-async';
 import { AnimatePresence } from 'framer-motion'
+import { SnackbarProvider } from 'notistack'
+
 const helmetContext = {};
 function App() {
 
-  return (
+return (
+<SnackbarProvider maxSnack={1} anchorOrigin={{ horizontal: "center" , vertical: "top" }}>
   <HelmetProvider context={helmetContext}>
     <AnimatePresence mode='wait'>
     <Router>
@@ -24,6 +27,7 @@ function App() {
     </Router>
     </AnimatePresence>
     </HelmetProvider>
+  </SnackbarProvider>
   )
 }
 

@@ -1,39 +1,7 @@
 import React,{useState} from 'react'
-import { Select,MenuItem,InputLabel } from '@mui/material'
-import styled from 'styled-components'
+import { StyledLabel,StyledSelect,StyledMenuItem } from './currency_styles'
+import {Holder} from '../../styles/global'
 
-
-
-const Root = styled.div`
-width: 100%;
-`
-const StyledLabel = styled(InputLabel)`
-color: #0A1628!important;
-font-family: Inter!important;
-font-size: 14px!important;
-font-style: normal!important;
-font-weight: 500!important;
-line-height: 20px!important;
-
-padding-bottom: 4px!important;
-`
-const StyledSelect = styled(Select)`
-width: 100%;
-font-size: 14px!important;
-font-style: normal!important;
-font-weight: 500!important;
-line-height: 20px!important;
-color: #0A1628!important;
-`
-
-const StyledMenuItem = styled(MenuItem)`
-width: 100%;
-font-size: 14px!important;
-font-style: normal!important;
-font-weight: 500!important;
-line-height: 20px!important;
-color: #0A1628!important;
-`
 
 const Currency = ({handleCurrencyChange,label}) => {
 
@@ -48,7 +16,7 @@ const Currency = ({handleCurrencyChange,label}) => {
     };
 
   return (
-    <Root>
+    <Holder>
         <StyledLabel id={label}>{label}</StyledLabel>
         <StyledSelect
         labelId={label}
@@ -60,7 +28,7 @@ const Currency = ({handleCurrencyChange,label}) => {
         <StyledMenuItem value="ETH">ETH</StyledMenuItem>
         <StyledMenuItem value="LTC">LTC</StyledMenuItem>
         </StyledSelect>
-  </Root>
+  </Holder>
   )
 }
 
