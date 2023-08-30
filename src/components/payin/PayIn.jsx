@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useParams, useNavigate } from 'react-router'
 import Currency from '../currency/Currency'
 import Loader from '../Loader'
-import { BASE_URL } from '../../Constants'
+import { BASE_URL } from '../../utils/Constants'
 import { Divider, Heading,ReferenceText,Button,Section,SectionText } from '../../styles/global'
 import { Price } from './payin_styles'
 

@@ -42,7 +42,7 @@ useEffect(() => {
 
         <Holder>
         <Divider/>
-        <SectionText width="40%" extra={true}>Amount due {timer == null  ? 
+        <SectionText width="45%" extra={true}>Amount due {timer == null  ? 
         <Loader width={20} height={20} color='blue'/> :
         <span>
           <div>{payload?.paidCurrency?.amount} {payload?.paidCurrency?.currency} </div>
@@ -51,7 +51,7 @@ useEffect(() => {
            }
         </SectionText>
         <Divider/>
-        <SectionText width="40%" extra={true}>
+        <SectionText width="45%" extra={true}>
           {payload?.paidCurrency?.currency} address {timer == null  ? 
           <Loader width={20} height={20} color='blue'/> 
           : <span>
@@ -64,7 +64,7 @@ useEffect(() => {
           <QrCode url={payload?.address?.uri} address={payload?.address?.address}/>
         
         <Divider/>
-        <SectionText width="40%" extra={true}>Time left to pay{timer == null  ? <Loader width={20} height={20} color='blue'/> : <span>{timer?.remainingSeconds}:{timer?.remainingMinutes}:{timer?.remainingHours}</span>}</SectionText>
+        <SectionText width="45%" extra={true}>Time left to pay{timer == null  ? <Loader width={20} height={20} color='blue'/> : <span>{timer?.remainingSeconds}:{timer?.remainingMinutes}:{timer?.remainingHours}</span>}</SectionText>
         <Divider/>
         </Holder>
     </>

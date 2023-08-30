@@ -3,8 +3,9 @@ import axios from 'axios'
 import { useNavigate, useParams } from 'react-router'
 import Modal from '../components/modal/Modal'
 import Seo from '../components/Seo'
-import { BASE_URL } from '../Constants'
+import { BASE_URL } from '../utils/Constants'
 import { Root } from '../styles/global'
+import { updateCountdown } from '../utils/helpers'
 
 const PayIn = () => {
   const { UUID } = useParams()
@@ -41,30 +42,6 @@ useEffect(() => {
   }
 }, [timerRef])
 
-  function updateCountdown(startTime, currency) {
-
-    const newInterval = setInterval(() => {
-      const targetTimestamp = startTime;
-      const currentTimestamp = new Date().getTime();
-      const timeRemaining = targetTimestamp - currentTimestamp;
-
-      if (timeRemaining <= 0) {
-        setTimer(null);
-        updateCurrency(currency);
-      } else {
-
-        const remainingHours = Math.floor(timeRemaining / (1000 * 60 * 60));
-        const remainingMinutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-        const remainingSeconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-        let obj = { remainingSeconds, remainingMinutes, remainingHours }
-        setTimer(obj);
-      
-      }
-    }, 1000);
-
-    setTimerRef(newInterval);
-    setUpdatingQuote(false)
-  }
 
   const updateCurrency = (currency) => {
     setUpdatingQuote(true)
@@ -78,10 +55,9 @@ useEffect(() => {
       .then((response) => {
         console.log(response.data)
         if (response.status == 200) {
-          updateCountdown(response.data.acceptanceExpiryDate, currency)
+          updateCountdown(response.data.acceptanceExpiryDate, currency,setTimer,setTimerRef,updateCurrency)
           setPayload(response.data)
-        
-
+          setUpdatingQuote(false)
         }
       })
       .catch((err) => {

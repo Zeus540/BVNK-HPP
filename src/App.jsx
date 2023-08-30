@@ -1,9 +1,9 @@
 import {BrowserRouter as Router,Routes} from 'react-router-dom'
 import {Route} from 'react-router'
-import PayIn from './Pages/PayIn'
-import PayInPayment from './Pages/PayInPayment'
-import PayInExpired from './Pages/PayInExpired'
-import NotFound from './Pages/NotFound'
+import PayIn from './pages/PayIn'
+import PayInPayment from './pages/PayInPayment'
+import PayInExpired from './pages/PayInExpired'
+import NotFound from './pages/NotFound'
 
 import { HelmetProvider } from 'react-helmet-async';
 import { AnimatePresence } from 'framer-motion'

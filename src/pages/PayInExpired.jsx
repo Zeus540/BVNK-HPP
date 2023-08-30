@@ -4,7 +4,7 @@ import Modal from '../components/modal/Modal'
 import { useParams, useNavigate } from 'react-router'
 import Seo from '../components/Seo'
 import { Root } from '../styles/global'
-import { BASE_URL } from '../Constants'
+import { BASE_URL } from '../utils/Constants'
 
 const PayInExpired = () => {
   const [payload, setPayload] = useState('')
