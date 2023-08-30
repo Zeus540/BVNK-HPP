@@ -18,7 +18,6 @@ return (
     <AnimatePresence mode='wait'>
     <Router>
       <Routes>
-        <Route exact path="/" element={<>Home</>}/>
         <Route exact path="/payin/:UUID" element={<PayIn/>}/>
         <Route exact path="/payin/:UUID/pay" element={<PayInPayment/>}/>
         <Route exact path="/payin/:UUID/expired" element={<PayInExpired/>}/>
